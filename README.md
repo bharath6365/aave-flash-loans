@@ -31,7 +31,7 @@ By using these two smart contracts, we're simulating a common DeFi scenario wher
 
 Here is the summary of operations that take place.
 
-![Arbitrage] (https://a.storyblok.com/f/87634/1990x1430/cc095e94f1/flash-loan-sequence.png)
+![Arbitrage](https://a.storyblok.com/f/87634/1990x1430/cc095e94f1/flash-loan-sequence.png)
 
 As you can see we have made a net profit of 
 10 - 0.05 = 9.95 USDC per transaction.
