@@ -31,8 +31,19 @@ By using these two smart contracts, we're simulating a common DeFi scenario wher
 
 Here is the summary of operations that take place.
 
+![Arbitrage] (https://a.storyblok.com/f/87634/1990x1430/cc095e94f1/flash-loan-sequence.png)
+
 As you can see we have made a net profit of 
 10 - 0.05 = 9.95 USDC per transaction.
+
+### Randomness
+To simulate randomness while buying/selling assets, we use this function. This generates
+a number from 85-100
+```
+   function getDexARate() internal view returns (uint256) {
+        return (uint256(keccak256(abi.encodePacked(block.timestamp, block.difficulty, msg.sender))) % 16) + 85; 
+    }
+```
 
 The smart contract is deployed on Sepholia testnet and here are few transactions
 
